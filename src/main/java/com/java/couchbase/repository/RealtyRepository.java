@@ -1,4 +1,3 @@
-
 package com.java.couchbase.repository;
 
 import com.java.couchbase.model.Person;
