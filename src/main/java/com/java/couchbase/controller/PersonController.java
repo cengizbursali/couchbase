@@ -21,13 +21,13 @@ public class PersonController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void saveFavorite(@RequestBody Person person) {
+    public void savePerson(@RequestBody Person person) {
         personService.save(person);
     }
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Person saveFavorite(@PathVariable Integer id) {
+    public Person getPerson(@PathVariable Integer id) {
         return personService.getPerson(id);
     }
 }
